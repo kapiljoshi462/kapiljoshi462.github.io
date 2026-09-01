@@ -4,19 +4,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Kapil Prasad Joshi | Business & Finance Professional</title>
+    <title>Kapil Prasad Joshi | Business & Finance</title>
 
     <meta name="description"
-          content="Official personal portfolio of Kapil Prasad Joshi — BBA graduate with experience in business development, accounting, securities and financial operations.">
+          content="Kapil Prasad Joshi — Business Development, Finance and Analytics professional from Nepal.">
 
     <meta name="author" content="Kapil Prasad Joshi">
 
-    <!-- Google Font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Playfair+Display:wght@600;700&display=swap"
+          rel="stylesheet">
 
     <style>
+
         /* =========================
            RESET
         ========================= */
@@ -33,19 +35,14 @@
 
         body {
             font-family: "Inter", sans-serif;
-            background: #f8f9fc;
             color: #172033;
+            background: #f8fafc;
             line-height: 1.7;
         }
 
         a {
             text-decoration: none;
             color: inherit;
-        }
-
-        img {
-            max-width: 100%;
-            display: block;
         }
 
         .container {
@@ -55,7 +52,7 @@
 
 
         /* =========================
-           NAVIGATION
+           NAVBAR
         ========================= */
 
         header {
@@ -64,22 +61,22 @@
             left: 0;
             width: 100%;
             z-index: 1000;
-            background: rgba(255, 255, 255, 0.94);
-            backdrop-filter: blur(12px);
-            border-bottom: 1px solid #e8ebf2;
+            background: rgba(255,255,255,0.92);
+            backdrop-filter: blur(15px);
+            border-bottom: 1px solid #e5e7eb;
         }
 
         nav {
-            height: 76px;
+            height: 75px;
             display: flex;
-            align-items: center;
             justify-content: space-between;
+            align-items: center;
         }
 
         .logo {
-            font-size: 22px;
+            font-size: 23px;
             font-weight: 800;
-            letter-spacing: -0.5px;
+            letter-spacing: -1px;
         }
 
         .logo span {
@@ -88,8 +85,7 @@
 
         .nav-links {
             display: flex;
-            align-items: center;
-            gap: 30px;
+            gap: 28px;
             list-style: none;
         }
 
@@ -107,7 +103,7 @@
         .menu-btn {
             display: none;
             border: none;
-            background: none;
+            background: transparent;
             font-size: 27px;
             cursor: pointer;
         }
@@ -119,35 +115,36 @@
 
         .hero {
             min-height: 100vh;
+            padding: 130px 0 80px;
             display: flex;
             align-items: center;
-            padding: 120px 0 70px;
+
             background:
-                radial-gradient(circle at 85% 20%, #dbeafe 0, transparent 28%),
-                radial-gradient(circle at 10% 80%, #e0e7ff 0, transparent 25%),
-                #f8f9fc;
+                radial-gradient(circle at 80% 20%, #dbeafe 0, transparent 30%),
+                radial-gradient(circle at 10% 90%, #e0e7ff 0, transparent 25%),
+                #f8fafc;
         }
 
         .hero-grid {
             display: grid;
-            grid-template-columns: 1.2fr 0.8fr;
-            gap: 70px;
+            grid-template-columns: 1.15fr 0.85fr;
             align-items: center;
+            gap: 70px;
         }
 
-        .hero-small {
+        .hero-label {
             color: #2563eb;
-            font-size: 14px;
-            font-weight: 700;
+            font-size: 13px;
+            font-weight: 800;
             letter-spacing: 2px;
             text-transform: uppercase;
-            margin-bottom: 15px;
+            margin-bottom: 18px;
         }
 
         .hero h1 {
             font-family: "Playfair Display", serif;
             font-size: clamp(48px, 6vw, 76px);
-            line-height: 1.08;
+            line-height: 1.05;
             letter-spacing: -2px;
             margin-bottom: 20px;
         }
@@ -156,16 +153,22 @@
             color: #2563eb;
         }
 
+        .hero-subtitle {
+            font-size: 20px;
+            font-weight: 600;
+            margin-bottom: 15px;
+        }
+
         .hero-description {
+            color: #64748b;
+            font-size: 16px;
             max-width: 650px;
-            color: #596579;
-            font-size: 17px;
             margin-bottom: 30px;
         }
 
         .hero-buttons {
             display: flex;
-            gap: 14px;
+            gap: 13px;
             flex-wrap: wrap;
         }
 
@@ -173,12 +176,11 @@
             display: inline-flex;
             align-items: center;
             justify-content: center;
-            padding: 13px 23px;
+            padding: 13px 22px;
             border-radius: 8px;
             font-size: 14px;
             font-weight: 700;
             transition: 0.3s;
-            cursor: pointer;
         }
 
         .btn-primary {
@@ -191,58 +193,77 @@
             transform: translateY(-2px);
         }
 
-        .btn-outline {
-            border: 1px solid #cbd5e1;
+        .btn-secondary {
             background: white;
+            border: 1px solid #cbd5e1;
             color: #172033;
         }
 
-        .btn-outline:hover {
+        .btn-secondary:hover {
             border-color: #2563eb;
             color: #2563eb;
             transform: translateY(-2px);
         }
 
-        .hero-image-wrapper {
+        .profile-container {
             display: flex;
             justify-content: center;
         }
 
-        .hero-image {
-            width: 340px;
-            height: 420px;
+        .profile-photo {
+            width: 350px;
+            height: 430px;
             object-fit: cover;
-            border-radius: 22px;
+            border-radius: 24px;
             border: 8px solid white;
-            box-shadow: 0 25px 60px rgba(15, 23, 42, 0.15);
-        }
-
-        .image-placeholder {
-            width: 340px;
-            height: 420px;
-            border-radius: 22px;
-            background: linear-gradient(145deg, #dbeafe, #eef2ff);
-            border: 8px solid white;
-            box-shadow: 0 25px 60px rgba(15, 23, 42, 0.15);
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            text-align: center;
-            color: #64748b;
-            padding: 30px;
+            box-shadow: 0 25px 60px rgba(15,23,42,0.16);
         }
 
 
         /* =========================
-           GENERAL SECTIONS
+           QUICK STATS
+        ========================= */
+
+        .stats {
+            padding: 35px 0;
+            background: white;
+            border-top: 1px solid #e5e7eb;
+            border-bottom: 1px solid #e5e7eb;
+        }
+
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+            text-align: center;
+        }
+
+        .stat {
+            padding: 10px;
+            border-right: 1px solid #e5e7eb;
+        }
+
+        .stat:last-child {
+            border-right: none;
+        }
+
+        .stat strong {
+            display: block;
+            font-size: 25px;
+            color: #2563eb;
+        }
+
+        .stat span {
+            color: #64748b;
+            font-size: 13px;
+        }
+
+
+        /* =========================
+           SECTIONS
         ========================= */
 
         section {
             padding: 100px 0;
-        }
-
-        .section-header {
-            margin-bottom: 55px;
         }
 
         .section-label {
@@ -256,14 +277,15 @@
 
         .section-title {
             font-family: "Playfair Display", serif;
-            font-size: clamp(34px, 4vw, 48px);
+            font-size: clamp(35px,4vw,48px);
             line-height: 1.2;
+            margin-bottom: 15px;
         }
 
         .section-subtitle {
-            max-width: 650px;
             color: #64748b;
-            margin-top: 12px;
+            max-width: 650px;
+            margin-bottom: 50px;
         }
 
 
@@ -287,29 +309,27 @@
             margin-bottom: 18px;
         }
 
-        .about-info {
+        .about-boxes {
             display: grid;
-            grid-template-columns: repeat(2, 1fr);
+            grid-template-columns: 1fr 1fr;
             gap: 15px;
-            margin-top: 30px;
         }
 
-        .info-box {
-            padding: 20px;
-            border: 1px solid #e6eaf0;
+        .about-box {
+            padding: 22px;
+            background: #f8fafc;
+            border: 1px solid #e5e7eb;
             border-radius: 12px;
-            background: #fafbfe;
         }
 
-        .info-box strong {
+        .about-box small {
             display: block;
-            font-size: 13px;
             color: #64748b;
             margin-bottom: 5px;
         }
 
-        .info-box span {
-            font-weight: 600;
+        .about-box strong {
+            font-size: 14px;
         }
 
 
@@ -318,12 +338,12 @@
         ========================= */
 
         .experience {
-            background: #f8f9fc;
+            background: #f8fafc;
         }
 
         .timeline {
-            position: relative;
             max-width: 900px;
+            position: relative;
         }
 
         .timeline::before {
@@ -333,7 +353,7 @@
             top: 5px;
             bottom: 5px;
             width: 2px;
-            background: #dbe2ec;
+            background: #dbe3ef;
         }
 
         .timeline-item {
@@ -357,22 +377,22 @@
             color: #2563eb;
             font-size: 13px;
             font-weight: 700;
-            margin-bottom: 5px;
-        }
-
-        .timeline-item h3 {
-            font-size: 21px;
             margin-bottom: 4px;
         }
 
-        .timeline-company {
+        .timeline-item h3 {
+            font-size: 20px;
+            margin-bottom: 3px;
+        }
+
+        .company {
             color: #64748b;
             font-weight: 600;
-            margin-bottom: 10px;
+            margin-bottom: 8px;
         }
 
         .timeline-item p {
-            color: #596579;
+            color: #64748b;
         }
 
 
@@ -384,38 +404,38 @@
             background: white;
         }
 
-        .education-grid {
+        .cards {
             display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            gap: 22px;
+            grid-template-columns: repeat(3,1fr);
+            gap: 20px;
         }
 
-        .education-card {
+        .card {
             padding: 30px;
-            border: 1px solid #e5e9f0;
+            border: 1px solid #e5e7eb;
             border-radius: 15px;
             transition: 0.3s;
             background: white;
         }
 
-        .education-card:hover {
+        .card:hover {
             transform: translateY(-5px);
-            box-shadow: 0 15px 35px rgba(15, 23, 42, 0.08);
+            box-shadow: 0 15px 35px rgba(15,23,42,0.08);
         }
 
-        .education-year {
+        .card-year {
             color: #2563eb;
             font-size: 13px;
             font-weight: 800;
-            margin-bottom: 15px;
+            margin-bottom: 14px;
         }
 
-        .education-card h3 {
-            font-size: 19px;
+        .card h3 {
+            font-size: 18px;
             margin-bottom: 8px;
         }
 
-        .education-card p {
+        .card p {
             color: #64748b;
             font-size: 14px;
         }
@@ -426,37 +446,34 @@
         ========================= */
 
         .skills {
-            background: #f8f9fc;
+            background: #f8fafc;
         }
 
         .skills-grid {
             display: grid;
-            grid-template-columns: repeat(3, 1fr);
+            grid-template-columns: repeat(3,1fr);
             gap: 18px;
         }
 
-        .skill-card {
-            padding: 25px;
+        .skill {
+            padding: 24px;
             background: white;
-            border: 1px solid #e6eaf0;
-            border-radius: 13px;
+            border: 1px solid #e5e7eb;
+            border-radius: 12px;
+            font-weight: 600;
             transition: 0.3s;
         }
 
-        .skill-card:hover {
+        .skill:hover {
             transform: translateY(-4px);
             border-color: #bfdbfe;
         }
 
         .skill-number {
-            font-size: 13px;
+            display: block;
             color: #2563eb;
-            font-weight: 800;
-            margin-bottom: 12px;
-        }
-
-        .skill-card h3 {
-            font-size: 17px;
+            font-size: 12px;
+            margin-bottom: 8px;
         }
 
 
@@ -470,41 +487,56 @@
 
         .projects-grid {
             display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            gap: 25px;
+            grid-template-columns: repeat(2,1fr);
+            gap: 22px;
         }
 
-        .project-card {
-            border: 1px solid #e5e9f0;
-            border-radius: 16px;
-            padding: 32px;
+        .project {
+            padding: 30px;
+            border: 1px solid #e5e7eb;
+            border-radius: 15px;
             transition: 0.3s;
         }
 
-        .project-card:hover {
+        .project:hover {
             transform: translateY(-5px);
-            box-shadow: 0 18px 40px rgba(15, 23, 42, 0.08);
+            box-shadow: 0 15px 35px rgba(15,23,42,0.08);
         }
 
-        .project-tag {
+        .tag {
             display: inline-block;
             padding: 5px 10px;
             border-radius: 20px;
             background: #eff6ff;
             color: #2563eb;
-            font-size: 12px;
-            font-weight: 700;
-            margin-bottom: 15px;
+            font-size: 11px;
+            font-weight: 800;
+            margin-bottom: 14px;
         }
 
-        .project-card h3 {
-            font-size: 21px;
-            margin-bottom: 10px;
+        .project h3 {
+            font-size: 20px;
+            margin-bottom: 8px;
         }
 
-        .project-card p {
+        .project p {
             color: #64748b;
             font-size: 14px;
+        }
+
+
+        /* =========================
+           CV CTA
+        ========================= */
+
+        .cv-section {
+            background: #eff6ff;
+            text-align: center;
+        }
+
+        .cv-section .section-subtitle {
+            margin-left: auto;
+            margin-right: auto;
         }
 
 
@@ -517,47 +549,37 @@
             color: white;
         }
 
-        .contact .section-label {
-            color: #60a5fa;
-        }
-
-        .contact .section-subtitle {
-            color: #9ca3af;
-        }
-
         .contact-grid {
             display: grid;
             grid-template-columns: 1fr 1fr;
             gap: 60px;
-            align-items: start;
         }
 
-        .contact-intro p {
+        .contact p {
             color: #9ca3af;
-            margin-top: 20px;
+            margin-top: 15px;
             max-width: 550px;
         }
 
-        .contact-details {
+        .contact-info {
             display: grid;
             gap: 15px;
         }
 
         .contact-item {
-            padding: 20px;
-            border: 1px solid #374151;
-            border-radius: 12px;
+            padding: 18px;
             background: #1f2937;
+            border: 1px solid #374151;
+            border-radius: 10px;
         }
 
         .contact-item small {
             display: block;
             color: #9ca3af;
-            margin-bottom: 4px;
+            margin-bottom: 3px;
         }
 
         .contact-item a {
-            color: white;
             font-weight: 600;
         }
 
@@ -571,37 +593,33 @@
         ========================= */
 
         footer {
+            padding: 25px;
+            text-align: center;
             background: #0b1120;
             color: #94a3b8;
-            padding: 25px 0;
-            text-align: center;
             font-size: 13px;
-        }
-
-        footer span {
-            color: white;
         }
 
 
         /* =========================
-           RESPONSIVE
+           MOBILE
         ========================= */
 
-        @media (max-width: 850px) {
+        @media(max-width:850px) {
 
             .menu-btn {
                 display: block;
             }
 
             .nav-links {
+                display: none;
                 position: absolute;
-                top: 76px;
+                top: 75px;
                 left: 0;
                 width: 100%;
                 background: white;
                 flex-direction: column;
                 gap: 0;
-                display: none;
                 border-bottom: 1px solid #e5e7eb;
             }
 
@@ -610,13 +628,13 @@
             }
 
             .nav-links li {
-                width: 100%;
                 text-align: center;
+                width: 100%;
             }
 
             .nav-links a {
                 display: block;
-                padding: 15px;
+                padding: 14px;
             }
 
             .hero-grid,
@@ -625,803 +643,826 @@
                 grid-template-columns: 1fr;
             }
 
-            .hero {
-                padding-top: 130px;
-            }
-
-            .hero-image-wrapper {
+            .profile-container {
                 order: -1;
             }
 
-            .hero-image,
-            .image-placeholder {
-                width: 280px;
-                height: 350px;
-            }
-
-            .education-grid,
+            .cards,
             .skills-grid {
                 grid-template-columns: 1fr 1fr;
-            }
-
-            .projects-grid {
-                grid-template-columns: 1fr;
             }
         }
 
 
-        @media (max-width: 550px) {
+        @media(max-width:550px) {
 
             section {
                 padding: 75px 0;
             }
 
+            .hero {
+                padding-top: 120px;
+            }
+
             .hero h1 {
-                font-size: 44px;
+                font-size: 45px;
             }
 
-            .hero-description {
-                font-size: 15px;
+            .profile-photo {
+                width: 280px;
+                height: 350px;
             }
 
-            .about-info,
-            .education-grid,
-            .skills-grid {
+            .about-boxes,
+            .cards,
+            .skills-grid,
+            .projects-grid,
+            .stats-grid {
                 grid-template-columns: 1fr;
+            }
+
+            .stat {
+                border-right: none;
+                border-bottom: 1px solid #e5e7eb;
+                padding: 15px;
+            }
+
+            .stat:last-child {
+                border-bottom: none;
             }
 
             .hero-buttons {
                 flex-direction: column;
-                align-items: stretch;
             }
 
             .btn {
                 width: 100%;
             }
         }
+
     </style>
 </head>
 
 
 <body>
 
-    <!-- =========================
-         NAVIGATION
-    ========================== -->
 
-    <header>
-        <div class="container">
-            <nav>
+<!-- =========================
+     NAVIGATION
+========================= -->
 
-                <a href="#home" class="logo">
-                    Kapil<span>.</span>
-                </a>
+<header>
 
-                <button class="menu-btn" onclick="toggleMenu()">
-                    ☰
-                </button>
+    <div class="container">
 
-                <ul class="nav-links" id="navLinks">
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#experience">Experience</a></li>
-                    <li><a href="#education">Education</a></li>
-                    <li><a href="#skills">Skills</a></li>
-                    <li><a href="#projects">Projects</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
+        <nav>
 
-            </nav>
-        </div>
-    </header>
+            <a href="#home" class="logo">
+                Kapil<span>.</span>
+            </a>
 
+            <button class="menu-btn" onclick="toggleMenu()">
+                ☰
+            </button>
 
-    <!-- =========================
-         HERO
-    ========================== -->
+            <ul class="nav-links" id="navLinks">
 
-    <main>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
 
-        <section class="hero" id="home">
+            </ul>
 
-            <div class="container">
+        </nav>
 
-                <div class="hero-grid">
+    </div>
 
-                    <div>
-
-                        <div class="hero-small">
-                            Business • Finance • Analytics
-                        </div>
-
-                        <h1>
-                            Hello, I'm<br>
-                            <span>Kapil Joshi.</span>
-                        </h1>
-
-                        <p class="hero-description">
-                            A motivated BBA graduate with professional experience
-                            in business development, accounting, securities and
-                            financial operations. I am interested in business,
-                            finance, analytics and continuous professional growth.
-                        </p>
-
-                        <div class="hero-buttons">
-
-                            <a href="#about" class="btn btn-primary">
-                                Explore My Profile
-                            </a>
-
-                            <a href="#contact" class="btn btn-outline">
-                                Contact Me
-                            </a>
-
-                        </div>
-
-                    </div>
+</header>
 
 
-                    <div class="hero-image-wrapper">
+<!-- =========================
+     HERO
+========================= -->
 
-                        <!--
-                            IMPORTANT:
-                            Later upload your professional photo to GitHub
-                            with the filename:
+<section class="hero" id="home">
 
-                            profile.jpg
+    <div class="container">
 
-                            Then replace the placeholder below with:
+        <div class="hero-grid">
 
-                            <img src="profile.jpg"
-                                 alt="Kapil Prasad Joshi"
-                                 class="hero-image">
-                        -->
+            <div>
 
-                        <div class="image-placeholder">
-                            <div>
-                                <strong>Your Professional Photo</strong>
-                                <br><br>
-                                Upload your professional photograph as
-                                <strong>profile.jpg</strong> to this repository.
-                            </div>
-                        </div>
+                <div class="hero-label">
+                    Business • Finance • Analytics
+                </div>
 
-                    </div>
+                <h1>
+                    Hello, I'm<br>
+                    <span>Kapil Joshi.</span>
+                </h1>
+
+                <div class="hero-subtitle">
+                    Business & Finance Professional
+                </div>
+
+                <p class="hero-description">
+                    BBA graduate with professional experience in business
+                    development, accounting, securities and financial
+                    operations. Currently developing my expertise in
+                    business analytics and data-driven decision making.
+                </p>
+
+                <div class="hero-buttons">
+
+                    <a href="#projects" class="btn btn-primary">
+                        View My Work
+                    </a>
+
+                    <a href="cv.pdf"
+                       class="btn btn-secondary"
+                       target="_blank">
+                        Download CV
+                    </a>
 
                 </div>
 
             </div>
 
-        </section>
 
+            <div class="profile-container">
 
-        <!-- =========================
-             ABOUT
-        ========================== -->
-
-        <section class="about" id="about">
-
-            <div class="container">
-
-                <div class="section-header">
-
-                    <div class="section-label">
-                        About Me
-                    </div>
-
-                    <h2 class="section-title">
-                        Building knowledge through<br>
-                        business and finance.
-                    </h2>
-
-                </div>
-
-
-                <div class="about-grid">
-
-                    <div class="about-text">
-
-                        <p>
-                            I am a BBA graduate from Pokhara University with
-                            practical experience across financial institutions,
-                            securities operations, accounting and business
-                            development.
-                        </p>
-
-                        <p>
-                            My professional journey has allowed me to work with
-                            financial records, clients, business communication,
-                            stock-market-related systems and organizational
-                            operations.
-                        </p>
-
-                        <p>
-                            I enjoy learning how businesses operate, understanding
-                            financial information and using analytical thinking
-                            to support better decisions.
-                        </p>
-
-                    </div>
-
-
-                    <div class="about-info">
-
-                        <div class="info-box">
-                            <strong>Education</strong>
-                            <span>Bachelor of Business Administration</span>
-                        </div>
-
-                        <div class="info-box">
-                            <strong>University</strong>
-                            <span>Pokhara University</span>
-                        </div>
-
-                        <div class="info-box">
-                            <strong>Location</strong>
-                            <span>Kathmandu, Nepal</span>
-                        </div>
-
-                        <div class="info-box">
-                            <strong>Focus</strong>
-                            <span>Business & Finance</span>
-                        </div>
-
-                    </div>
-
-                </div>
+                <img src="profile.png"
+                     alt="Kapil Prasad Joshi"
+                     class="profile-photo">
 
             </div>
-
-        </section>
-
-
-        <!-- =========================
-             EXPERIENCE
-        ========================== -->
-
-        <section class="experience" id="experience">
-
-            <div class="container">
-
-                <div class="section-header">
-
-                    <div class="section-label">
-                        Career
-                    </div>
-
-                    <h2 class="section-title">
-                        Professional Experience
-                    </h2>
-
-                    <p class="section-subtitle">
-                        My professional experience across business development,
-                        accounting and financial services.
-                    </p>
-
-                </div>
-
-
-                <div class="timeline">
-
-
-                    <!-- Experience 1 -->
-
-                    <div class="timeline-item">
-
-                        <div class="timeline-dot"></div>
-
-                        <div class="timeline-date">
-                            Dec 2025 — Present
-                        </div>
-
-                        <h3>
-                            Business Development Executive
-                        </h3>
-
-                        <div class="timeline-company">
-                            Upahar Media Network (P) Ltd. • Kathmandu
-                        </div>
-
-                        <p>
-                            Managing client relationships and business communication.
-                            Assisting with marketing and promotional activities,
-                            supporting business growth initiatives and partnership
-                            coordination, preparing reports and maintaining client
-                            records.
-                        </p>
-
-                    </div>
-
-
-                    <!-- Experience 2 -->
-
-                    <div class="timeline-item">
-
-                        <div class="timeline-dot"></div>
-
-                        <div class="timeline-date">
-                            Sep 2025 — Nov 2025
-                        </div>
-
-                        <h3>
-                            Business Development Executive — Intern
-                        </h3>
-
-                        <div class="timeline-company">
-                            Upahar Media Network (P) Ltd. • Kathmandu
-                        </div>
-
-                        <p>
-                            Assisted the business development team with market
-                            outreach, client coordination and communication.
-                            Supported preparation of presentations and promotional
-                            materials.
-                        </p>
-
-                    </div>
-
-
-                    <!-- Experience 3 -->
-
-                    <div class="timeline-item">
-
-                        <div class="timeline-dot"></div>
-
-                        <div class="timeline-date">
-                            Aug 2024 — Aug 2025
-                        </div>
-
-                        <h3>
-                            Accountant
-                        </h3>
-
-                        <div class="timeline-company">
-                            Asian Securities Pvt. Ltd. • Kathmandu
-                        </div>
-
-                        <p>
-                            Maintained financial records and accounting documentation.
-                            Assisted with transaction processing, data entry,
-                            office operations and client-related financial activities.
-                        </p>
-
-                    </div>
-
-
-                    <!-- Experience 4 -->
-
-                    <div class="timeline-item">
-
-                        <div class="timeline-dot"></div>
-
-                        <div class="timeline-date">
-                            Oct 2023 — Dec 2023
-                        </div>
-
-                        <h3>
-                            Intern
-                        </h3>
-
-                        <div class="timeline-company">
-                            Nagarik Stock Dealer Company Limited • Kathmandu
-                        </div>
-
-                        <p>
-                            Gained practical exposure to stock-market operations,
-                            brokerage procedures, customer handling, documentation,
-                            TMS and Mero Share systems.
-                        </p>
-
-                    </div>
-
-                </div>
-
-            </div>
-
-        </section>
-
-
-        <!-- =========================
-             EDUCATION
-        ========================== -->
-
-        <section class="education" id="education">
-
-            <div class="container">
-
-                <div class="section-header">
-
-                    <div class="section-label">
-                        Academic Background
-                    </div>
-
-                    <h2 class="section-title">
-                        Education
-                    </h2>
-
-                </div>
-
-
-                <div class="education-grid">
-
-                    <div class="education-card">
-
-                        <div class="education-year">
-                            2019 — 2024
-                        </div>
-
-                        <h3>
-                            Bachelor of Business Administration
-                        </h3>
-
-                        <p>
-                            Citizen College<br>
-                            Pokhara University<br>
-                            Kathmandu, Nepal
-                        </p>
-
-                    </div>
-
-
-                    <div class="education-card">
-
-                        <div class="education-year">
-                            2017 — 2019
-                        </div>
-
-                        <h3>
-                            Higher Secondary Education
-                        </h3>
-
-                        <p>
-                            Little Buddha Academy<br>
-                            Mahendranagar, Nepal
-                        </p>
-
-                    </div>
-
-
-                    <div class="education-card">
-
-                        <div class="education-year">
-                            2016 — 2017
-                        </div>
-
-                        <h3>
-                            SEE
-                        </h3>
-
-                        <p>
-                            Shree Tribhuwan Higher Secondary School I<br>
-                            Kanchanpur, Nepal
-                        </p>
-
-                    </div>
-
-                </div>
-
-            </div>
-
-        </section>
-
-
-        <!-- =========================
-             SKILLS
-        ========================== -->
-
-        <section class="skills" id="skills">
-
-            <div class="container">
-
-                <div class="section-header">
-
-                    <div class="section-label">
-                        Capabilities
-                    </div>
-
-                    <h2 class="section-title">
-                        Skills & Expertise
-                    </h2>
-
-                    <p class="section-subtitle">
-                        A combination of business, financial, technical and
-                        communication skills developed through education and
-                        professional experience.
-                    </p>
-
-                </div>
-
-
-                <div class="skills-grid">
-
-                    <div class="skill-card">
-                        <div class="skill-number">01</div>
-                        <h3>Microsoft Excel</h3>
-                    </div>
-
-                    <div class="skill-card">
-                        <div class="skill-number">02</div>
-                        <h3>Microsoft Word</h3>
-                    </div>
-
-                    <div class="skill-card">
-                        <div class="skill-number">03</div>
-                        <h3>Microsoft PowerPoint</h3>
-                    </div>
-
-                    <div class="skill-card">
-                        <div class="skill-number">04</div>
-                        <h3>Stock Market Operations</h3>
-                    </div>
-
-                    <div class="skill-card">
-                        <div class="skill-number">05</div>
-                        <h3>TMS & Mero Share</h3>
-                    </div>
-
-                    <div class="skill-card">
-                        <div class="skill-number">06</div>
-                        <h3>Basic Accounting Software</h3>
-                    </div>
-
-                    <div class="skill-card">
-                        <div class="skill-number">07</div>
-                        <h3>Data Entry & Documentation</h3>
-                    </div>
-
-                    <div class="skill-card">
-                        <div class="skill-number">08</div>
-                        <h3>Client Coordination</h3>
-                    </div>
-
-                    <div class="skill-card">
-                        <div class="skill-number">09</div>
-                        <h3>Business Communication</h3>
-                    </div>
-
-                </div>
-
-            </div>
-
-        </section>
-
-
-        <!-- =========================
-             PROJECTS
-        ========================== -->
-
-        <section class="projects" id="projects">
-
-            <div class="container">
-
-                <div class="section-header">
-
-                    <div class="section-label">
-                        Work & Interests
-                    </div>
-
-                    <h2 class="section-title">
-                        Projects & Interests
-                    </h2>
-
-                    <p class="section-subtitle">
-                        Areas where I am developing my knowledge and exploring
-                        future opportunities.
-                    </p>
-
-                </div>
-
-
-                <div class="projects-grid">
-
-                    <div class="project-card">
-
-                        <span class="project-tag">
-                            Business Analytics
-                        </span>
-
-                        <h3>
-                            Business Analytics Platform
-                        </h3>
-
-                        <p>
-                            Exploring a platform concept that combines personal
-                            financial information, business analysis, financial
-                            guidance and investment-related opportunities.
-                        </p>
-
-                    </div>
-
-
-                    <div class="project-card">
-
-                        <span class="project-tag">
-                            Finance
-                        </span>
-
-                        <h3>
-                            Financial & Investment Research
-                        </h3>
-
-                        <p>
-                            Developing knowledge around financial markets,
-                            securities, investment products and financial
-                            decision-making.
-                        </p>
-
-                    </div>
-
-
-                    <div class="project-card">
-
-                        <span class="project-tag">
-                            Digital
-                        </span>
-
-                        <h3>
-                            Personal Portfolio Website
-                        </h3>
-
-                        <p>
-                            Building a professional online presence to showcase
-                            my education, experience, skills, projects and
-                            professional journey.
-                        </p>
-
-                    </div>
-
-
-                    <div class="project-card">
-
-                        <span class="project-tag">
-                            Future Goal
-                        </span>
-
-                        <h3>
-                            Business & Data Analytics
-                        </h3>
-
-                        <p>
-                            Interested in developing stronger analytical,
-                            financial and business intelligence capabilities
-                            for future professional opportunities.
-                        </p>
-
-                    </div>
-
-                </div>
-
-            </div>
-
-        </section>
-
-
-        <!-- =========================
-             CONTACT
-        ========================== -->
-
-        <section class="contact" id="contact">
-
-            <div class="container">
-
-                <div class="contact-grid">
-
-                    <div class="contact-intro">
-
-                        <div class="section-label">
-                            Get In Touch
-                        </div>
-
-                        <h2 class="section-title">
-                            Let's connect.
-                        </h2>
-
-                        <p>
-                            Whether you would like to discuss business,
-                            finance, professional opportunities or potential
-                            collaborations, feel free to get in touch.
-                        </p>
-
-                    </div>
-
-
-                    <div class="contact-details">
-
-                        <div class="contact-item">
-
-                            <small>Email</small>
-
-                            <a href="mailto:kapiljoshi462@gmail.com">
-                                kapiljoshi462@gmail.com
-                            </a>
-
-                        </div>
-
-
-                        <div class="contact-item">
-
-                            <small>Location</small>
-
-                            <span>
-                                Kathmandu, Nepal
-                            </span>
-
-                        </div>
-
-
-                        <div class="contact-item">
-
-                            <small>Professional Focus</small>
-
-                            <span>
-                                Business • Finance • Analytics
-                            </span>
-
-                        </div>
-
-                    </div>
-
-                </div>
-
-            </div>
-
-        </section>
-
-    </main>
-
-
-    <!-- =========================
-         FOOTER
-    ========================== -->
-
-    <footer>
-
-        <div class="container">
-
-            © <span id="year"></span>
-            Kapil Prasad Joshi.
-            All rights reserved.
 
         </div>
 
-    </footer>
+    </div>
+
+</section>
 
 
-    <!-- =========================
-         JAVASCRIPT
-    ========================== -->
+<!-- =========================
+     QUICK STATS
+========================= -->
 
-    <script>
+<section class="stats">
 
-        // Mobile navigation
-        function toggleMenu() {
+    <div class="container">
 
-            const nav = document.getElementById("navLinks");
+        <div class="stats-grid">
 
-            nav.classList.toggle("active");
+            <div class="stat">
+                <strong>BBA</strong>
+                <span>Academic Background</span>
+            </div>
 
-        }
+            <div class="stat">
+                <strong>Finance</strong>
+                <span>Professional Experience</span>
+            </div>
+
+            <div class="stat">
+                <strong>Analytics</strong>
+                <span>Future Direction</span>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
 
 
-        // Close mobile menu after clicking a link
-        document.querySelectorAll(".nav-links a").forEach(link => {
+<!-- =========================
+     ABOUT
+========================= -->
 
-            link.addEventListener("click", () => {
+<section class="about" id="about">
 
-                document
-                    .getElementById("navLinks")
-                    .classList.remove("active");
+    <div class="container">
 
-            });
+        <div class="section-label">
+            About Me
+        </div>
+
+        <h2 class="section-title">
+            Business, finance and<br>
+            analytical thinking.
+        </h2>
+
+
+        <div class="about-grid">
+
+            <div class="about-text">
+
+                <p>
+                    I am a Bachelor of Business Administration graduate
+                    from Pokhara University with practical experience
+                    across financial services, accounting, securities
+                    operations and business development.
+                </p>
+
+                <p>
+                    My experience has helped me develop skills in
+                    financial documentation, client coordination,
+                    business communication, stock-market operations
+                    and organizational activities.
+                </p>
+
+                <p>
+                    I am particularly interested in business analytics,
+                    financial analysis and using data to understand
+                    business problems and support better decisions.
+                </p>
+
+            </div>
+
+
+            <div class="about-boxes">
+
+                <div class="about-box">
+                    <small>Education</small>
+                    <strong>Bachelor of Business Administration</strong>
+                </div>
+
+                <div class="about-box">
+                    <small>University</small>
+                    <strong>Pokhara University</strong>
+                </div>
+
+                <div class="about-box">
+                    <small>Location</small>
+                    <strong>Kathmandu, Nepal</strong>
+                </div>
+
+                <div class="about-box">
+                    <small>Professional Focus</small>
+                    <strong>Business & Finance</strong>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================
+     EXPERIENCE
+========================= -->
+
+<section class="experience" id="experience">
+
+    <div class="container">
+
+        <div class="section-label">
+            Career
+        </div>
+
+        <h2 class="section-title">
+            Professional Experience
+        </h2>
+
+        <p class="section-subtitle">
+            Experience developed across business development,
+            accounting and securities operations.
+        </p>
+
+
+        <div class="timeline">
+
+
+            <div class="timeline-item">
+
+                <div class="timeline-dot"></div>
+
+                <div class="timeline-date">
+                    Dec 2025 — Present
+                </div>
+
+                <h3>
+                    Business Development Executive
+                </h3>
+
+                <div class="company">
+                    Upahar Media Network (P) Ltd. • Kathmandu
+                </div>
+
+                <p>
+                    Managing client relationships and business communication.
+                    Supporting marketing and promotional activities, business
+                    growth initiatives and partnership coordination. Preparing
+                    reports and maintaining client records.
+                </p>
+
+            </div>
+
+
+            <div class="timeline-item">
+
+                <div class="timeline-dot"></div>
+
+                <div class="timeline-date">
+                    Sep 2025 — Nov 2025
+                </div>
+
+                <h3>
+                    Business Development Executive — Intern
+                </h3>
+
+                <div class="company">
+                    Upahar Media Network (P) Ltd. • Kathmandu
+                </div>
+
+                <p>
+                    Assisted with market outreach, client coordination,
+                    communication, presentations and promotional materials.
+                </p>
+
+            </div>
+
+
+            <div class="timeline-item">
+
+                <div class="timeline-dot"></div>
+
+                <div class="timeline-date">
+                    Aug 2024 — Aug 2025
+                </div>
+
+                <h3>
+                    Accountant
+                </h3>
+
+                <div class="company">
+                    Asian Securities Pvt. Ltd. • Kathmandu
+                </div>
+
+                <p>
+                    Maintained financial records and accounting documentation.
+                    Assisted with transaction processing, data entry,
+                    office operations and client-related financial activities.
+                </p>
+
+            </div>
+
+
+            <div class="timeline-item">
+
+                <div class="timeline-dot"></div>
+
+                <div class="timeline-date">
+                    Oct 2023 — Dec 2023
+                </div>
+
+                <h3>
+                    Intern
+                </h3>
+
+                <div class="company">
+                    Nagarik Stock Dealer Company Limited • Kathmandu
+                </div>
+
+                <p>
+                    Gained practical exposure to stock-market operations,
+                    brokerage procedures, customer handling, documentation,
+                    TMS and Mero Share systems.
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================
+     EDUCATION
+========================= -->
+
+<section class="education" id="education">
+
+    <div class="container">
+
+        <div class="section-label">
+            Academic Background
+        </div>
+
+        <h2 class="section-title">
+            Education
+        </h2>
+
+        <p class="section-subtitle">
+            My academic foundation in business and management.
+        </p>
+
+
+        <div class="cards">
+
+            <div class="card">
+
+                <div class="card-year">
+                    2019 — 2024
+                </div>
+
+                <h3>
+                    Bachelor of Business Administration
+                </h3>
+
+                <p>
+                    Citizen College<br>
+                    Pokhara University<br>
+                    Kathmandu, Nepal
+                </p>
+
+            </div>
+
+
+            <div class="card">
+
+                <div class="card-year">
+                    2017 — 2019
+                </div>
+
+                <h3>
+                    Higher Secondary Education
+                </h3>
+
+                <p>
+                    Little Buddha Academy<br>
+                    Mahendranagar, Nepal
+                </p>
+
+            </div>
+
+
+            <div class="card">
+
+                <div class="card-year">
+                    2016 — 2017
+                </div>
+
+                <h3>
+                    Secondary Education Examination
+                </h3>
+
+                <p>
+                    Shree Tribhuwan Higher Secondary School I<br>
+                    Kanchanpur, Nepal
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================
+     SKILLS
+========================= -->
+
+<section class="skills" id="skills">
+
+    <div class="container">
+
+        <div class="section-label">
+            Capabilities
+        </div>
+
+        <h2 class="section-title">
+            Skills & Expertise
+        </h2>
+
+        <p class="section-subtitle">
+            Practical skills developed through education and professional
+            experience.
+        </p>
+
+
+        <div class="skills-grid">
+
+            <div class="skill">
+                <span class="skill-number">01</span>
+                MS Excel
+            </div>
+
+            <div class="skill">
+                <span class="skill-number">02</span>
+                MS Word
+            </div>
+
+            <div class="skill">
+                <span class="skill-number">03</span>
+                PowerPoint
+            </div>
+
+            <div class="skill">
+                <span class="skill-number">04</span>
+                Stock Market Operations
+            </div>
+
+            <div class="skill">
+                <span class="skill-number">05</span>
+                TMS & Mero Share
+            </div>
+
+            <div class="skill">
+                <span class="skill-number">06</span>
+                Basic Accounting Software
+            </div>
+
+            <div class="skill">
+                <span class="skill-number">07</span>
+                Data Entry
+            </div>
+
+            <div class="skill">
+                <span class="skill-number">08</span>
+                Documentation
+            </div>
+
+            <div class="skill">
+                <span class="skill-number">09</span>
+                Client Coordination
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================
+     PROJECTS
+========================= -->
+
+<section class="projects" id="projects">
+
+    <div class="container">
+
+        <div class="section-label">
+            Portfolio
+        </div>
+
+        <h2 class="section-title">
+            Projects & Interests
+        </h2>
+
+        <p class="section-subtitle">
+            Areas I'm exploring and developing for my future career.
+        </p>
+
+
+        <div class="projects-grid">
+
+
+            <div class="project">
+
+                <span class="tag">
+                    Business Analytics
+                </span>
+
+                <h3>
+                    Business Analytics Platform
+                </h3>
+
+                <p>
+                    Exploring a platform concept that combines personal
+                    financial information, business analysis, financial
+                    guidance and investment-related opportunities.
+                </p>
+
+            </div>
+
+
+            <div class="project">
+
+                <span class="tag">
+                    Finance
+                </span>
+
+                <h3>
+                    Financial & Investment Research
+                </h3>
+
+                <p>
+                    Developing knowledge around financial markets,
+                    securities, investment products and financial
+                    decision-making.
+                </p>
+
+            </div>
+
+
+            <div class="project">
+
+                <span class="tag">
+                    Digital Portfolio
+                </span>
+
+                <h3>
+                    Personal Website
+                </h3>
+
+                <p>
+                    Building a professional digital presence to showcase
+                    education, experience, projects and future analytical work.
+                </p>
+
+            </div>
+
+
+            <div class="project">
+
+                <span class="tag">
+                    Future Goal
+                </span>
+
+                <h3>
+                    Business & Data Analytics
+                </h3>
+
+                <p>
+                    Developing stronger analytical and business intelligence
+                    capabilities for future professional opportunities.
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================
+     CV
+========================= -->
+
+<section class="cv-section">
+
+    <div class="container">
+
+        <div class="section-label">
+            My Resume
+        </div>
+
+        <h2 class="section-title">
+            Want to know more?
+        </h2>
+
+        <p class="section-subtitle">
+            Download my professional CV to explore my education,
+            experience and skills in more detail.
+        </p>
+
+        <a href="cv.pdf"
+           target="_blank"
+           class="btn btn-primary">
+
+            Download My CV
+
+        </a>
+
+    </div>
+
+</section>
+
+
+<!-- =========================
+     CONTACT
+========================= -->
+
+<section class="contact" id="contact">
+
+    <div class="container">
+
+        <div class="contact-grid">
+
+            <div>
+
+                <div class="section-label">
+                    Contact
+                </div>
+
+                <h2 class="section-title">
+                    Let's connect.
+                </h2>
+
+                <p>
+                    I'm open to professional conversations, learning
+                    opportunities, collaborations and discussions around
+                    business, finance and analytics.
+                </p>
+
+            </div>
+
+
+            <div class="contact-info">
+
+                <div class="contact-item">
+
+                    <small>Email</small>
+
+                    <a href="mailto:kapiljoshi462@gmail.com">
+                        kapiljoshi462@gmail.com
+                    </a>
+
+                </div>
+
+
+                <div class="contact-item">
+
+                    <small>GitHub</small>
+
+                    <a href="https://github.com/kapiljoshi462"
+                       target="_blank">
+                        github.com/kapiljoshi462
+                    </a>
+
+                </div>
+
+
+                <div class="contact-item">
+
+                    <small>Location</small>
+
+                    <span>
+                        Kathmandu, Nepal
+                    </span>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================
+     FOOTER
+========================= -->
+
+<footer>
+
+    © <span id="year"></span> Kapil Prasad Joshi.
+    All rights reserved.
+
+</footer>
+
+
+<!-- =========================
+     JAVASCRIPT
+========================= -->
+
+<script>
+
+    function toggleMenu() {
+
+        const nav = document.getElementById("navLinks");
+
+        nav.classList.toggle("active");
+
+    }
+
+
+    document.querySelectorAll(".nav-links a").forEach(link => {
+
+        link.addEventListener("click", () => {
+
+            document
+                .getElementById("navLinks")
+                .classList.remove("active");
 
         });
 
+    });
 
-        // Automatically update copyright year
-        document.getElementById("year").textContent =
-            new Date().getFullYear();
 
-    </script>
+    document.getElementById("year").textContent =
+        new Date().getFullYear();
+
+</script>
+
 
 </body>
 </html>
